@@ -1,0 +1,35 @@
+//////////////////////////////////////////////
+//                                          //       
+//   FILE CATALOG - READ ME FILE            //                               
+//                                          //
+//   AUTHOR - TUSHAR BHATIA                 //
+//////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+//                                          //       
+//   Instructions to run the project are    //                               //   given in the ReadMe.txt file in the    //
+//   FILE_CATALOG Folder                    //
+//////////////////////////////////////////////
+
+
+
+
+This project analyzes the directory structure on the local machine, looking for duplicate file names and searching for text in specified files. 
+
+The C++ standard libraries does not provide any support for managing directory information. 
+For that reason a FileSystem facility is used to carry out that functionality.
+
+The project identifies a set of files for analysis by supplying, on the command line, a path, one or more file patterns, and a switch /s which, if present, indicates that the entire directory tree rooted at the path is searched for matching files. If the switch is not present on the command line only the directory at that path is searched.
+
+The command line option /d, when present, causes your program to emit a list of duplicate file names along with their paths.
+
+The command line option, /f<search text>, when present, causes the program to list all the files stored in the catalog that contain the search text.
+
+The Project emits a brief summary of all the files present in the catalog.
+
+After construction of the catalog and emitting any specified results, the Project accepts from the console new text specifications for text searches in the catalog by providing text.
+
+
+The File catalog constructs a catalog of all files in the file set, saving each file name only once and saving each path only once, while preserving all of the containment relationships between directories and their files. The file storage saves a list of references into a set of paths where they are found. 
+
